@@ -3,12 +3,12 @@
   <configuration default="false" factoryName="Application" name="runData" singleton="false" type="Application">
     <option name="MAIN_CLASS_NAME" value="net.minecraftforge.userdev.LaunchTesting"/>
     <option name="VM_PARAMETERS" value="-Dforge.logging.console.level=debug -Dforge.logging.markers=SCAN,REGISTRIES,REGISTRYDUMP"/>
-    <option name="PROGRAM_PARAMETERS" value="--mod examplemod --all --output D:\DATA\PROJECTS\MINECRAFT\1.14\Tutorial_1.14\src\generated\resources"/>
-    <option name="WORKING_DIRECTORY" value="D:\DATA\PROJECTS\MINECRAFT\1.14\Tutorial_1.14\run"/>
-    <module name="Tutorial_1.14_main"/>
+    <option name="PROGRAM_PARAMETERS" value="--mod examplemod --all --output C:\Users\Will\Documents\DATA\PROJECTS\MINECRAFT\1.14\Tutorial-Mod-1.14\src\generated\resources"/>
+    <option name="WORKING_DIRECTORY" value="C:\Users\Will\Documents\DATA\PROJECTS\MINECRAFT\1.14\Tutorial-Mod-1.14\run"/>
+    <module name="Tutorial-Mod-1.14_main"/>
     <envs>
-      <env name="MOD_CLASSES" value="examplemod%%D:\DATA\PROJECTS\MINECRAFT\1.14\Tutorial_1.14\build\resources\main;examplemod%%D:\DATA\PROJECTS\MINECRAFT\1.14\Tutorial_1.14\build\classes\java\main"/>
-      <env name="MCP_MAPPINGS" value="snapshot_20190621-1.14.2"/>
+      <env name="MOD_CLASSES" value="examplemod%%C:\Users\Will\Documents\DATA\PROJECTS\MINECRAFT\1.14\Tutorial-Mod-1.14\build\resources\main;examplemod%%C:\Users\Will\Documents\DATA\PROJECTS\MINECRAFT\1.14\Tutorial-Mod-1.14\build\classes\java\main"/>
+      <env name="MCP_MAPPINGS" value="snapshot_20190626-1.14.3"/>
       <env name="MCP_VERSION" value="20190624.152911"/>
       <env name="FORGE_VERSION" value="27.0.12"/>
       <env name="FORGE_GROUP" value="net.minecraftforge"/>

@@ -1,11 +1,15 @@
 package com.kerwin.mymodtutorial;
 
+import com.kerwin.mymodtutorial.blocks.FirstBlock;
+import com.kerwin.mymodtutorial.blocks.MMTBlocks;
 import com.kerwin.mymodtutorial.proxy.ClientProxy;
 import com.kerwin.mymodtutorial.proxy.IProxy;
 import com.kerwin.mymodtutorial.proxy.ServerProxy;
 import com.kerwin.mymodtutorial.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -46,6 +50,11 @@ public class MyModTutorial {
     public static class RegistryEvents {
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
+            blockRegistryEvent.getRegistry().register(new FirstBlock());
+        }
+        @SubscribeEvent
+        public static void onItemsRegistry(final RegistryEvent.Register<Item> blockRegistryEvent) {
+            blockRegistryEvent.getRegistry().register(new BlockItem(MMTBlocks.FIRST_BLOCK, new Item.Properties()).setRegistryName("first_block"));
         }
     }
 }
